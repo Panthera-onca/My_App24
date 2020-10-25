@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connexion unidirectionelle1 avec le service"
+        android:onClick="onClickBtnUn"/>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connexion bidirectionelle avec le service"
+        android:layout_below="@id/btn_1"
+        android:onClick="onClickBtnDeux"/>
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connexion unidirectionelle1 avec le service"
+        android:layout_below="@id/btn_2"
+        android:onClick="onClickBtnTrois"/>
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deconnexion"
+        android:layout_below="@id/btn_3"
+        android:onClick="onClickDeconnexion"/>
+    
+    <Button
+        android:id="@+id/btn_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ligne de log"
+        android:layout_below="@id/btn_4"
+        android:onClick="onClickLogLigne"/>
+        
+
+
+</RelativeLayout>
